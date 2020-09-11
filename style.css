@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(231, 244, 245);
+}
+
+#header {
+    padding: 2rem;
+}
+
+#board {
+    background: linear-gradient(160deg, #0bdbf7cb 0%, #81cd7e 100%);
+    border-radius: 2%;
+    padding: 2% 0;
+    width: 55%;
+    margin-bottom: 3rem;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.322);
+}
+
+.circle {
+    width: 15%;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 0.8rem;
+    float: left;
+}
+
+.circle:after {
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+}
+
+.circle:hover {
+    box-shadow: 0 0 1.4rem 0 rgba(187, 5, 204, 0.678);
+}
+
+.circle.chosen {
+    border: 2px solid white;
+}
+
+.p1.circle {
+    background-color: red;
+}
+
+.p1.circle:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(180, 40, 21, 0.95);
+}
+
+.p1.chosen {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(180, 40, 21, 0.95);
+}
+
+.p2.circle {
+    background-color: blue;
+}
+
+.p2:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(10, 106, 216, 0.95);
+}
+
+.p2.chosen {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(10, 106, 216, 0.95);
+}
+
+#turn-row, #reset-row {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#turn-text.p1 {
+    color: red;
+}
+
+#turn-text.p2 {
+    color: blue;
+}
+
